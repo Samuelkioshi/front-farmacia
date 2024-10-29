@@ -1,0 +1,21 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header, footer {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #e0e0e0;
+    padding: 1em;
+}
+.product-grid {
+    display: grid;
+}

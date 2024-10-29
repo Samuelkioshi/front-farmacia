@@ -1,0 +1,7 @@
+<div *ngIf="produto">
+    <h2>{{ produto.NOME_PROD }}</h2>
+    <p>Fabricante: {{ produto.FABRICANTE }}</p>
+    <p>Seção: {{ produto.SECAO }}</p>
+    <p>Valor: R$ {{ produto.VALOR | number: '1.2-2' }}</p>
+    <button (click)="goBack()">Voltar</button>
+  </div>

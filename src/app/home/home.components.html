@@ -1,0 +1,42 @@
+<header>
+    <h1>Farmácia Impacta Saúde</h1>
+  </header>
+  
+  <nav>
+    <div>
+      <a href="#">Minha Conta</a>
+      <a href="#">Carrinho de Compras</a>
+    </div>
+    <div>
+      <a href="#" (click)="adminAccess()">Administração</a>
+    </div>
+  </nav>
+  
+  <div class="menu">
+    <a href="#">Medicamentos</a>
+    <a href="#">Beleza</a>
+    <a href="#">Vitaminas e Suplementos</a>
+    <a href="#">Cuidados Pessoais</a>
+    <a href="#">Higiene</a>
+    <a href="#">Dermocosméticos</a>
+    <a href="#">Promoções</a>
+  </div>
+  
+  <main>
+    <h2>Bem-vindo à Farmácia Impacta Saúde</h2>
+    <p>Explore nossas seções e encontre os melhores produtos para sua saúde e bem-estar!</p>
+  
+    <div class="product-grid">
+      <div class="product-card" *ngFor="let produto of produtos" (click)="showProductDescription(produto.ID_PROD)">
+        <h3>{{ produto.NOME_PROD }}</h3>
+        <p>Fabricante: {{ produto.FABRICANTE }}</p>
+        <p>Seção: {{ produto.SECAO }}</p>
+        <p>Valor: R$ {{ produto.VALOR | number: '1.2-2' }}</p>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Farmácia Impacta Saúde. Todos os direitos reservados.</p>
+    <p>Contato: contato@farmaciaimpactasaude.com.br | Telefone: (11) 1234-5678</p>
+  </footer>
