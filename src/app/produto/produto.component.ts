@@ -7,7 +7,11 @@ import { ProdutoService } from './produto.service';
   styleUrls: ['./produto.component.css']
 })
 export class ProdutoComponent implements OnInit {
+goBack() {
+throw new Error('Method not implemented.');
+}
   produtos: any[] = [];
+produto: any;
 
   constructor(private produtoService: ProdutoService) {}
 
